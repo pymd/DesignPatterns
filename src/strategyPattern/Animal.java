@@ -1,4 +1,4 @@
-package BasicOOP;
+package strategyPattern;
 
 public class Animal {
     private String name;
@@ -44,4 +44,24 @@ public class Animal {
         this.sound = sound;
     }
 
+    /*
+        Giving flying ability to an Animal
+        Bad Design - never add any method to a super-class that doesn't pertain
+        to all sub-classes
+    */
+    public void fly(){
+        System.out.println("I'm flying");
+    }
+
+    // Strategy Pattern
+    // Composition of the Interface Flys
+    public Flys flyingType;
+
+    public String tryToFly(){
+        return flyingType.fly();
+    }
+
+    public void setFlyingType(Flys newFlyingType){
+        flyingType = newFlyingType;
+    }
 }
