@@ -46,13 +46,14 @@ public class Animal {
 
     /*
         Giving flying ability to an Animal
-        Bad Design - never add any method to a super-class that doesn't pertain
+        The following is a Bad Design: never add any method to a super-class that doesn't pertain
         to all sub-classes
     */
     public void fly(){
         System.out.println("I'm flying");
     }
 
+    // Good Design
     // Strategy Pattern
     // Composition of the Interface Flys
     public Flys flyingType;

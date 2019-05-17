@@ -1,0 +1,35 @@
+- Avoid interfaces that Just Force Action
+    - Using an interface just to force the creation of a method is a bad idea
+
+
+Strategy Pattern:
+
+
+                 Has A Relationship
+  Animal          -------->               <interface> Flys
+ |      |                                 |             |
+ |      |                                 |             |
+ |      |                                 |             |
+
+Dog    Bird                             ItFlys        CantFly
+
+- Define a family of algorithms, encapsulate each one and make them interchangable.
+- It lets algorithm vary independently from the clients that use it
+
+
+When to use?
+- When you want to define a class that will have one behavior that is similar to other behaviors in a list.
+E.g.
+    - I want the class to be able to choose from:
+        - Not Flying
+        - Fly with wings
+        - Fly super fast
+- When you want to use one of the several behaviors dyanmically.
+
+
+- Often reduces long list of conditionals
+- Avoid duplicate codes
+- Keeps class changes from forcing other class changes
+- Can hide complicated/secret code from the user
+- Negatives:
+    - Increased number of Classes and Objects
