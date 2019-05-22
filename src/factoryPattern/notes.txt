@@ -1,17 +1,18 @@
 What is Factory Pattern?
-- When a method returns one of the several possible classes that share a common SuperClass
-E.g.
-    - Create a new enemy in a game
-    - Random number generator picks a number assigned to a specific enemy
-    - The Factory returns the enemy associated with the number
-- The class is chosen at run-time.
-- Allows you to create objects without specifying the exact class of object that will be created (at runtime)
+    - When a method returns one of the several possible classes that share a common SuperClass
+
+    E.g.
+        - Create a new enemy in a game
+        - Random number generator picks a number assigned to a specific enemy
+        - The Factory returns the enemy associated with the number
+    - The class is chosen at run-time.
+    - Allows you to create objects without specifying the exact class of object that will be created (at runtime)
 
 When to use Factory Pattern:
-- When you don't know what class you might need, but all potential classes are in the same sub-class hierarchy
-- To centralize class selection code
-- When you don't want the user to have to know every sub-class
-- To encapsulate object creation
+    - When you don't know what class you might need, but all potential classes are in the same sub-class hierarchy
+    - To centralize class selection code
+    - When you don't want the user to have to know every sub-class
+    - To encapsulate object creation
 
 
 

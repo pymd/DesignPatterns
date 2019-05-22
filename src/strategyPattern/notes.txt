@@ -24,7 +24,7 @@ E.g.
         - Not Flying
         - Fly with wings
         - Fly super fast
-- When you want to use one of the several behaviors dyanmically.
+- When you want to use one of the several behaviors dynamically.
 
 
 - Often reduces long list of conditionals
