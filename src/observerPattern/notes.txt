@@ -1,0 +1,7 @@
+Observer Pattern:
+    - Used to model a one-to-many relationships between objects
+    - Many Observers can 'subscribe' to the same Subject
+    - Works like a news subscription model
+
+    - Each Observer can subscribe or unsubscribe itself to the Subject
+    - Subject maintains a list of Observers subscribed to itself.

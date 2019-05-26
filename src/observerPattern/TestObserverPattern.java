@@ -5,22 +5,18 @@ import java.util.List;
 
 public class TestObserverPattern {
     public static void main(String[] args) {
-        Subject subject = new Subject();
+        ConcreteSubject subject = new ConcreteSubject();
 
-        List<Observer> observers = new ArrayList<>();
+        List<ConcreteObserver> concreteObservers = new ArrayList<>();
         for(int i=0; i<5; i++){
-            observers.add(new Observer("Observer" + i));
+            concreteObservers.add(new ConcreteObserver(subject));
         }
+        subject.setData("Hello");
 
-        for(int i=0; i<3; i++){
-            subject.registerObserver(observers.get(i));
-        }
-        subject.event();
-
+        // Assuming the observers would want to un-register themselves
         for(int i=3; i<5; i++){
-            subject.registerObserver(observers.get(i));
+            concreteObservers.get(i).getSubject().unregister(concreteObservers.get(i));
         }
-
-        subject.event();
+        subject.setData("World");
     }
 }
