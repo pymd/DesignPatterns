@@ -1,0 +1,10 @@
+Decorator Pattern:
+    - Allows behavior to be added to an individual object, dynamically, without affecting the
+        behavior of other objects from the same class.
+    - Allows to modify an object dynamically
+    - Use it when you want capabilities of inheritance with sub-classes, but want to add functionality
+        at run-time
+    - More flexible than inheritance
+    - Rather than rewrite old code, you can extend with new code
+
+    - Inheritance is static, Composition is dynamic
